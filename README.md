@@ -5,24 +5,27 @@ This repository provides you with a detailed guide on how to training and build 
 ## Installation
 
 ```bash
-  git clone https://github.com/Marsmallotr/License-Plate-Recognition.git
-  cd License-Plate-Recognition
+  # step 1: clone this repo
+  git clone https://github.com/capstone-k20-219/capstone-k20-219-test-anpr.git
+  cd capstone-k20-219-test-anpr
 
-  # install dependencies using pip 
+  # step 2: install dependencies using pip
   pip install -r ./requirement.txt
+
+  # Note: If you have any problem with installing dependencies, please install them manually
 ```
 
-- **Pretrained model** provided in ./model folder in this repo 
+- **Pretrained model** provided in ./model folder in this repo
 
 - **Download yolov5 (old version) from this link:** [yolov5 - google drive](https://drive.google.com/file/d/1g1u7M4NmWDsMGOppHocgBKjbwtDA-uIu/view?usp=sharing)
 
-- Copy yolov5 folder to project folder
+- Copy yolov5 folder to project folder (make sure that you have install all needed dependencies in this folder)
 
 ## Run License Plate Recognition
 
 ```bash
   # run inference on webcam (15-20fps if there is 1 license plate in scene)
-  python webcam.py 
+  python webcam.py
 
   # run inference on image
   python lp_image.py -i test_image/3.jpg
@@ -31,6 +34,7 @@ This repository provides you with a detailed guide on how to training and build 
 ```
 
 ## Result
+
 ![Demo 1](result/image.jpg)
 
 ![Vid](result/video_1.gif)
@@ -49,7 +53,12 @@ Thanks [Mì Ai](https://www.miai.vn/thu-vien-mi-ai/) and [winter2897](https://gi
 **Training code for Yolov5:**
 
 Use code in ./training folder
+
 ```bash
   training/Plate_detection.ipynb     #for LP_Detection
   training/Letter_detection.ipynb    #for Letter_detection
 ```
+
+## Thanks
+
+Thanks [Trung Đinh](https://github.com/trungdinh22/License-Plate-Recognition/tree/main) for sharing the repository of his license plate recognition model training and usage.
