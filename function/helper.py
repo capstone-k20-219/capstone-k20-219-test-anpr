@@ -63,13 +63,3 @@ def read_plate(yolo_license_plate, im):
             license_plate += str(l[2])  
         license_plate = license_plate[:-5] + "-" + license_plate[-5:]
     return license_plate
-
-# 30F-xxx.xx --> 30F-xxxxx
-
-# 30-SD --> 30SD
-# xxx.xx
-# --> 30SD-xxx.xx
-
-# xx-MĐx --> xxMDx 
-# xxx.xx
-# --> xxMDx-xxx.xx
